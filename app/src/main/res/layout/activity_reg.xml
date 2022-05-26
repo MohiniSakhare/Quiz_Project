@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_bg"
+    tools:context=".Reg_Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Register First"
+        android:textColor="#090909"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/input_bg"
+        android:gravity="fill_vertical"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#090808"
+        android:textColorLink="#E8D046E8"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+    <EditText
+        android:id="@+id/etMob"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:hint="Contact No."
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#090808"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+
+    <EditText
+        android:id="@+id/etStd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:hint="Standard"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#090808"
+        app:layout_constraintEnd_toEndOf="@+id/etMob"
+        app:layout_constraintStart_toStartOf="@+id/etMob"
+        app:layout_constraintTop_toBottomOf="@+id/etMob"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:hint="E-mail Address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#090808"
+        app:layout_constraintEnd_toEndOf="@+id/etStd"
+        app:layout_constraintStart_toStartOf="@+id/etStd"
+        app:layout_constraintTop_toBottomOf="@+id/etStd"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:hint="Set Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#090808"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        tools:ignore="SpeakableTextPresentCheck"></EditText>
+
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="308dp"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <ImageButton
+        android:id="@+id/btn_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reg"
+        app:layout_constraintStart_toStartOf="@+id/btn_reg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg"
+        app:srcCompat="@drawable/left_arrow"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
